@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    background-color: #32c2b9;
+}
+.form-container{
+    margin-top: 60px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: lightgreen;
+}
+
+.form-container > button {
+    background-color: rgb(167, 86, 242);
+    color: white;
+    width: 100px;
+    height: 28px;
+    border-radius: 10px;
+    
+    cursor: pointer;
+}
+.form-container > button:hover {
+    background-color: rgb(102, 30, 168);
+}
+
+
+li > label{
+    display: flex;
+    align-items: center;
+}
+label > span{
+    padding: 0 10px;
+    text-decoration: underline;
+}
+.List > li{
+    display: flex;
+    align-items: center;
+}
+

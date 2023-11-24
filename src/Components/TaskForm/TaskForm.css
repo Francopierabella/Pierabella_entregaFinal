@@ -1,0 +1,47 @@
+:root{
+    --ColorAO : #00686c,
+    --ColorAC : #32c2b9,
+    --ColorBeige: #edecb3,
+    --ColorAmarillo : #fad928,
+    --ColorNaranja : #ff9915
+}
+
+.form-container{
+    display: flex;
+    background-color: #00686c;
+    /* background-color: lightgreen; */
+}
+
+
+.form-container > button {
+    background-color: #fad928;
+    color: #00686c;
+    width: 100px;
+    height: 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.form-container > button:hover {
+    background-color: #ff9915;
+    outline: 5px solid #ff9915;
+}
+
+.container > label{
+    color:#edecb3;
+    text-decoration: underline solid #fad928;
+    margin: 10px;
+    font-size: 20px;
+}
+.container > input{
+   border-radius: 10px;
+   border: none;
+   height: 28px;
+}
+#change{
+    color: #edecb3;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}

@@ -23,8 +23,9 @@
     border: none;
 }
 .form-container > button:hover {
-    background-color: #ff9915;
-    outline: 5px solid #ff9915;
+    background-color: #fad928;
+    outline: 5px solid #fad928;
+    transition: 0.3s;
 }
 
 .container > label{

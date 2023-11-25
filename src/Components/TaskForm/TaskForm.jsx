@@ -38,14 +38,14 @@ const TaskForm = () => {
     <>
         <form onSubmit={handleSubmit} className='form-container'>
             <div className="container">
-                <label htmlFor="Task">New Task</label>
+                <label htmlFor="Task">New Task: </label>
                 <input type="text"
                 value={newItem} onChange={e => setNewItem(e.target.value)} id='Task' minLength={4} maxLength={30} />
             </div>
             <button className='btn-add'>Add Task</button>
         </form>
         <TaskList tasks={tasks} deleteTask={deleteTask} />
-        <span id='change'>{showMsjWarning && 'You are changing the TaskList...'}</span>
+        <span id='change'>{showMsjWarning && 'You are updating the TaskList...'}</span>
     </>
   )
 }

@@ -46,3 +46,19 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 500px) {
+    .form-container > button {
+        width: 60px;
+        font-size: 10px;
+    }
+    .container > label{
+        font-size: 15px;
+    }
+    .container > input{
+        width: 100px;
+    }
+    #change{
+        font-size: 1.2rem;
+    }
+}

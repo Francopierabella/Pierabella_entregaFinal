@@ -21,6 +21,34 @@
     height: 30px;
     transition: 0.3s;
 }
+@media (max-width:600px) {
+    label > span{
+        font-size: 10px;
+    }
 
+}
+@media (max-width:460px) {
+    .check{
+        width: 20px;
+    }
+    .no-check{
+        width: 20px;
+    }
+    .check:hover{
+        width: 20px;
+    }
+    .no-check:hover{
+        width: 20px;
+    }
+    label > span{
+        font-size: 10px;
+    }
+    #checktask{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+    
+}
 
 

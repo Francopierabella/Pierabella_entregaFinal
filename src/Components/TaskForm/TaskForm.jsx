@@ -1,4 +1,6 @@
 import React , {useEffect, useState} from 'react'
+import { v4 as uuidv4 } from 'uuid';
+
 import TaskList from '../TaskList/TaskList'
 import './TaskForm.css'
 
@@ -18,7 +20,7 @@ const TaskForm = () => {
     setTasks((currentTasks) => {
       return [
         ...currentTasks,{
-          id: crypto.randomUUID(), 
+          id: uuidv4(), 
           title : newItem, 
           completed : false
         }
@@ -38,7 +40,7 @@ const TaskForm = () => {
     <>
         <form onSubmit={handleSubmit} className='form-container'>
             <div className="container">
-                <label htmlFor="Task">New Task: </label>
+                <label htmlFor="Task">New Task:</label>
                 <input type="text"
                 value={newItem} onChange={e => setNewItem(e.target.value)} id='Task' minLength={4} maxLength={30} />
             </div>

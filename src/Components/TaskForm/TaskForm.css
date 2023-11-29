@@ -31,7 +31,7 @@
 .container > label{
     color:#edecb3;
     text-decoration: underline solid #fad928;
-    margin: 10px;
+    margin: 2px;
     font-size: 20px;
 }
 .container > input{
@@ -59,18 +59,28 @@ form > .btn-delete-all:hover{
     outline: 5px solid red;
     background-color: red;
 }   
-@media (max-width: 500px) {
+@media (max-width: 570px) {
     .form-container > button {
         width: 60px;
+        height: 20px;
         font-size: 10px;
     }
     .container > label{
-        font-size: 15px;
+        font-size: 12px;
     }
     .container > input{
-        width: 100px;
+        width: 90px;
+        height: 20px;
     }
     #change{
         font-size: 1.2rem;
+    }
+}
+@media (max-width: 380px){
+    .container > input{
+        width: 60px;
+    }
+    .container > label{
+        font-size: 12px;
     }
 }

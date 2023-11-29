@@ -46,7 +46,19 @@
     display: flex;
     justify-content: center;
 }
-
+form > .btn-delete-all{
+    width: 100px;
+    height: 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: red;
+    color: #00686c;
+}
+form > .btn-delete-all:hover{
+    outline: 5px solid red;
+    background-color: red;
+}   
 @media (max-width: 500px) {
     .form-container > button {
         width: 60px;

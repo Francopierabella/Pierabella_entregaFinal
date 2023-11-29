@@ -14,6 +14,12 @@ const TaskForm = () => {
       return currentTasks.filter(task => task.id !== id)
     })
   }
+
+  const deleteAllTasks = () => {
+      for(let i = 0; i < tasks.length; i++){
+        deleteTask(tasks[i].id)
+      }
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
     setNewItem('')
@@ -22,13 +28,12 @@ const TaskForm = () => {
         ...currentTasks,{
           id: uuidv4(), 
           title : newItem, 
-          completed : false
+          
         }
       ]
     })
   }
-
-  useEffect(() =>{
+   useEffect(() =>{
     if (tasks.length > 0){
       setShowMsjWarning(true)
     }
@@ -45,6 +50,7 @@ const TaskForm = () => {
                 value={newItem} onChange={e => setNewItem(e.target.value)} id='Task' minLength={4} maxLength={30} />
             </div>
             <button className='btn-add'>Add Task</button>
+            <button className='btn-delete-all' type='button' onClick={deleteAllTasks}>Delete All</button>
         </form>
         <TaskList tasks={tasks} deleteTask={deleteTask} />
         <span id='change'>{showMsjWarning && 'You are updating the TaskList...'}</span>
